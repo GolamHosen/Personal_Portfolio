@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <div class="logo-container">
+                    <div class="logo">
+                        <svg viewBox="0 0 100 100" class="logo-svg">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"
+                                opacity="0.3" />
+                            <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width="2"
+                                opacity="0.5" />
+                            <circle cx="50" cy="50" r="25" fill="currentColor" opacity="0.8" />
+                            <text x="50" y="58" text-anchor="middle" fill="white" font-family="Arial, sans-serif"
+                                font-size="16" font-weight="bold">GHR/text>
+                        </svg>
+                    </div>
+                    <span class="brand-text">G.H.Raihan</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold text-white mb-3">Hi, I'm <span class="text-white">G.H.Raihan</span>
+                        </h1>
+                        <h2 class="h3 text-light mb-4">MERN Stack Developer</h2>
+                        <p class="lead text-light mb-4">I create beautiful, responsive websites and applications that
+                            provide exceptional user experiences.</p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary btn-lg me-3">View My Work</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <div class="hero-logo-container">
+                            <div class="hero-logo">
+                                <svg viewBox="0 0 200 200" class="hero-logo-svg">
+                                    <defs>
+                                        <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                        </linearGradient>
+                                        <filter id="glow">
+                                            <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+                                            <feMerge>
+                                                <feMergeNode in="coloredBlur" />
+                                                <feMergeNode in="SourceGraphic" />
+                                            </feMerge>
+                                        </filter>
+                                    </defs>
+                                    <circle cx="100" cy="100" r="90" fill="none" stroke="url(#heroGradient)"
+                                        stroke-width="3" opacity="0.3" />
+                                    <circle cx="100" cy="100" r="70" fill="none" stroke="url(#heroGradient)"
+                                        stroke-width="3" opacity="0.5" />
+                                    <circle cx="100" cy="100" r="50" fill="url(#heroGradient)" opacity="0.9"
+                                        filter="url(#glow)" />
+                                    <text x="100" y="115" text-anchor="middle" fill="white"
+                                        font-family="Poppins, sans-serif" font-size="32" font-weight="700">GHR</text>
+                                    <circle cx="100" cy="100" r="5" fill="white" opacity="0.8" />
+                                </svg>
+                            </div>
+                        </div>
+                        <img src="https://via.placeholder.com/400x400/007bff/ffffff?text=Profile" alt="Profile"
+                            class="img-fluid rounded-circle shadow-lg profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-5">About Me</h2>
+                    <p class="lead mb-4">
+                        Web Developer with hands-on experience designing and developing scalable web applications using <span style="font-weight: bold;"> React.js, Node.js, Express.js, and MongoDB.</span> Proficient in JavaScript (ES6+), RESTful APIs, and front-end UI frameworks like Tailwind CSS and Bootstrap.Strong
+                        understanding of the full development lifecycle, from planning to deployment on platforms like Vercel, Netlify and Heroku. Currently expanding expertise in <span style="font-weight: bold;">.NET framework and C#</span> to strengthen backend development capabilities.
+                    </p>
+                    <p class="mb-4">
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source
+                        projects,
+                        or sharing knowledge with the developer community. I believe in continuous learning and staying
+                        up-to-date with the latest industry trends.
+                    </p>
+                    <div class="row text-center d-flex justify-content-center">
+                        <div class="col-md-4">
+                            <div class="stat-item">
+                                <h3 class="text-primary fw-bold">20+</h3>
+                                <p class="text-muted">Projects Completed</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat-item">
+                                <h3 class="text-primary fw-bold">2</h3>
+                                <p class="text-muted">Years Experience</p>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4">
+                            <div class="stat-item">
+                                <h3 class="text-primary fw-bold">100+</h3>
+                                <p class="text-muted">Happy Clients</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-5">Skills & Technologies</h2>
+                    <p class="lead mb-5">Here are the technologies and tools I work with</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="skill-category mb-5">
+                        <h4 class="mb-4">Frontend Development</h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>HTML5 & CSS3</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Bootstrap & TailwindCSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>JavaScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>React.js</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Redux</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="skill-category mb-5">
+                        <h4 class="mb-4">Backend Development</h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Node.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Express.js</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>MongoDB</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>MySQL</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="skill-category">
+                        <h4 class="mb-4 text-center">Tools & Technologies</h4>
+                        <div class="row text-center d-flex justify-content-center">
+                            <div class="col-md-2 col-sm-4 col-6 mb-3">
+                                <div class="tech-item">
+                                    <i class="fab fa-git-alt fa-3x text-primary mb-2"></i>
+                                    <p>Git</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6 mb-3">
+                                <div class="tech-item">
+                                    <i class="fab fa-docker fa-3x text-primary mb-2"></i>
+                                    <p>Docker</p>
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-2 col-sm-4 col-6 mb-3">
+                                <div class="tech-item">
+                                    <i class="fab fa-aws fa-3x text-primary mb-2"></i>
+                                    <p>AWS</p>
+                                </div>
+                            </div> -->
+                            <div class="col-md-2 col-sm-4 col-6 mb-3">
+                                <div class="tech-item">
+                                    <i class="fas fa-database fa-3x text-primary mb-2"></i>
+                                    <p>MongoDB</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6 mb-3">
+                                <div class="tech-item">
+                                    <i class="fas fa-server fa-3x text-primary mb-2"></i>
+                                    <p>MySQL</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-6 mb-3">
+                                <div class="tech-item">
+                                    <i class="fab fa-figma fa-3x text-primary mb-2"></i>
+                                    <p>Figma</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-5">Work Experience</h2>
+                    <p class="lead mb-5">My professional journey and achievements</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Web Development Instructor </h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Knowledge IT | 23 May 2025 – 01 November 2025, Uttara 06, Dhaka, Banglades</h6>
+                                        
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-success me-2"></i>Instruct students in HTML, CSS, JavaScript, Bootstrap, React, and Node.js, ensuring strong front-end and back-end
+                                                fundamentals. Build and maintain UI components for e-commerce website and update static website content weekly.</li>
+                                            <li><i class="fas fa-check text-success me-2"></i>Designed and delivered a structured curriculum covering responsive design, version control (Git/GitHub), and real-world
+                                                project development. Conducted hands-on coding sessions and guided students through portfolio projects.</li>
+                                            <li><i class="fas fa-check text-success me-2"></i>Mentored students through one-on-one sessions, providing feedback on code quality and best practices, resulting
+                                                in improved debugging skills.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Her Power Project IT Trainer</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Babylon Resources Ltd. | 18 May 2024 -
+                                            24 April 2025, Lalmatia, Dhaka, Bangladesh</h6>
+                                        <p class="card-text" style="opacity: 0.6;">
+                                            The Her Power Project is a Bangladesh government initiative under the ICT
+                                            Division to empower women through ICT training, focusing on digital skills
+                                            to promote entrepreneurship, self-employment, and freelancing opportunities
+                                            in the IT sector
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-success me-2"></i>I taught freelancing
+                                                techniques, building a portfolio, and managing clients and
+                                                entrepreneurial strategies to create self-reliant
+                                                career opportunities</li>
+                                            <li><i class="fas fa-check text-success me-2"></i>I have trained students on
+                                                digital skills including web development (HTML, CSS, JavaScript, Basics
+                                                of MYSQL) and framework
+                                                (Bootstrap and React.js) for building responsive websites.</li>
+                                            <li><i class="fas fa-check text-success me-2"></i>I have imparted practical
+                                                knowledge about IT services and e-commerce platforms.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jr.Frontend Developer(Part-Time | Work From Home)</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">SISLO Media Ltd. | 12 Jan 2024 - 5
+                                            May 2024, Rajshahi, Bangladesh</h6>
+                                        <p class="card-text" style="opacity: 0.6;">
+                                            Focused on creating user-friendly interfaces and implementing modern
+                                            frontend technologies.
+                                            Collaborated closely with designers and backend developers.
+                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check text-success me-2"></i>Built 15+ React components
+                                            </li>
+                                            <li><i class="fas fa-check text-success me-2"></i>Developed responsive
+                                                e-commerce landing pages (JavaScript, React.js, Bootstrap and Tailwind
+                                                CSS) for small businesses and
+                                                Fix layout bugs and ensure cross-device responsiveness</li>
+                                            <li><i class="fas fa-check text-success me-2"></i>Build and maintain UI
+                                                components for e-commerce website and update static website content
+                                                weekly.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-5">Featured Projects</h2>
+                    <p class="lead mb-5">Some of my recent work and side projects</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="assets/BigShop.png"
+                            class="card-img-top" alt="E-Commerce App">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">E-Commerce Platform</h5>
+                            <p class="card-text"> E-commerce Frontend dashboard with React and Tailwind CSS
+                                </p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary me-1">React</span>
+                                <span class="badge bg-primary me-1">Context API</span>
+                                <span class="badge bg-primary me-1">Tailwind CSS</span>
+                            </div>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="https://ecommerceshop-snowy.vercel.app/" class="btn btn-outline-primary me-2">Live Demo</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="./assets/TaskManager.png"
+                            class="card-img-top" alt="Task Manager">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Task Management App</h5>
+                            <p class="card-text">A collaborative task management application with real-time updates,
+                                drag-and-drop functionality, and team collaboration features.</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary me-1">Next.js</span>
+                                <span class="badge bg-primary me-1">Tailwind CSS</span>
+                                <span class="badge bg-primary me-1">Clerk</span>
+                            </div>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="https://task--manager.vercel.app/signin" class="btn btn-outline-primary me-2">Live Demo</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="./assets/weather.jpg"
+                            class="card-img-top" alt="Weather App">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Weather Dashboard</h5>
+                            <p class="card-text">A responsive weather application with location-based forecasts,
+                                interactive maps, and detailed weather analytics for multiple cities.</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary me-1">JavaScript</span>
+                                <span class="badge bg-primary me-1">API</span>
+                                <span class="badge bg-primary me-1">Bootstrap</span>
+                            </div>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="https://68deaa20d8824bfcc6bce5ca--weather-dashboard-956017.netlify.app/" class="btn btn-outline-primary me-2">Live Demo</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="./assets/cocktails.png"
+                            class="card-img-top" alt="Weather App">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Cocktails & Mocktails</h5>
+                            <p class="card-text">Using tools React.js(vite) Tailwind CSS, Styled Components and Framer motion.</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary me-1">React.js</span>
+                                <span class="badge bg-primary me-1">Tailwind CSS</span>
+                                <span class="badge bg-primary me-1 mt-1">Framer motion</span>
+                            </div>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="https://cocktails-mocktails-4eacbc.netlify.app/" class="btn btn-outline-primary me-2">Live Demo</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="./assets//portfolio.png"
+                            class="card-img-top" alt="Portfolio Site">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">A modern, responsive portfolio website built with Bootstrap and vanilla
+                                JavaScript. Features smooth animations and mobile-first design.</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary me-1">HTML5</span>
+                                <span class="badge bg-primary me-1">CSS3</span>
+                                <span class="badge bg-primary me-1">Bootstrap</span>
+                            </div>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="https://6816dc60c53ca8553535f901--fluffy-torrone-bef726.netlify.app/" class="btn btn-outline-primary me-2">Live Demo</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="./assets/Bird.png"
+                            class="card-img-top" alt="Blog Platform">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Flying Bird Game</h5>
+                            <p class="card-text">Built with React.js and Bootstrap</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary me-1">React.js</span>
+                                <span class="badge bg-primary me-1">Bootstrap and custom css</span>
+                                
+                            </div>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="https://zingy-paletas-d5b104.netlify.app/" class="btn btn-outline-primary me-2">Live Demo</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="./assets/image.png"
+                            class="card-img-top" alt="API Service">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Cooking Recipe</h5>
+                            <p class="card-text">Fetching API and rendering.</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary me-1">React.js</span>
+                                <span class="badge bg-primary me-1">MealDB API</span>
+                                <!-- <span class="badge bg-primary me-1">PostgreSQL</span> -->
+                            </div>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="https://whimsical-tiramisu-815ec3.netlify.app/" class="btn btn-outline-primary me-2">Live Demo</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="./assets/invoice.png"
+                            class="card-img-top" alt="invoice Generator">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Invoice Generator</h5>
+                            <p class="card-text">Creating invoice of items with bill provider and bill receiver</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary me-1">React.js</span>
+                                <span class="badge bg-primary me-1">Tailwind CSS</span>
+                                <span class="badge bg-primary mt-1">jspdf, file-saver</span>
+                                <!-- <span class="badge bg-primary me-1">PostgreSQL</span> -->
+                            </div>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="https://invoice-generator-fd855d.netlify.app/" class="btn btn-outline-primary me-2">Live Demo</a>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="./assets/movie_search.jpg"
+                            class="card-img-top" alt="movie search engine">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Movie Search Engine</h5>
+                            <p class="card-text">This movie search engine provide limited movie</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary me-1">React.js</span>
+                                <span class="badge bg-primary me-1">Tailwind CSS</span>
+                                <span class="badge bg-primary me-1">TMDb API</span>
+                                <!-- <span class="badge bg-primary me-1">PostgreSQL</span> -->
+                            </div>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="https://movie-search-engine-077b42.netlify.app/" class="btn btn-outline-primary me-2">Live Demo</a>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="./assets/qr_code.png"
+                            class="card-img-top" alt="qr code generator">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">QR code generator</h5>
+                            <p class="card-text">Creating custom qr code , type anything and convert to qr code</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary me-1">React.js</span>
+                                <span class="badge bg-primary me-1">react-qr-code</span>
+                                <span class="badge bg-primary mt-1">Bootstrap</span>
+                                <!-- <span class="badge bg-primary me-1">PostgreSQL</span> -->
+                            </div>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="https://qr-code-generator-aa691c.netlify.app/" class="btn btn-outline-primary me-2">Live Demo</a>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="./assets/cake.png"
+                            class="card-img-top" alt="online cake shop">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Online Cake Shop</h5>
+                            <p class="card-text">It's a online cake shop , choose, pay and place your order</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary me-1">HTML5</span>
+                                <span class="badge bg-primary me-1">CSS3</span>
+                                <span class="badge bg-primary me-1">JavaScript</span>
+                                
+                            </div>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="https://online-cake-shop-e90784.netlify.app/" class="btn btn-outline-primary me-2">Live Demo</a>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="./assets/fashion.png"
+                            class="card-img-top" alt="fashion shop">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Fashion Shop</h5>
+                            <p class="card-text">Trend your fashion/style with fashion shop</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary me-1">HTML5</span>
+                                <span class="badge bg-primary me-1">JavaScript</span>
+                                <span class="badge bg-primary me-1">Tailwind CSS</span>
+                               
+                            </div>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="https://fashion-shop-3fd6ab.netlify.app/" class="btn btn-outline-primary me-2">Live Demo</a>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-5">Resume</h2>
+                    <p class="lead mb-5">Download my complete resume or view it online</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="resume-container">
+                        <div class="resume-header text-center mb-4">
+                            <button class="btn btn-primary btn-lg mb-3" onclick="downloadResume()">
+                                <i class="fas fa-download me-2"></i>Download Resume (PDF)
+                            </button>
+                            <div class="resume-actions">
+                                <button class="btn btn-outline-success me-2" onclick="printResume()">
+                                    <i class="fas fa-print me-2"></i>Print
+                                </button>
+                                <button class="btn btn-outline-secondary" onclick="shareResume()">
+                                    <i class="fas fa-share me-2"></i>Share
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="resume-content" id="resumeContent">
+                            <!-- Resume Header -->
+                            <div class="resume-header-section text-center mb-4">
+                                <h1 class="resume-name">G.H.Raihan</h1>
+                                <!-- <h2 class="resume-title">Full Stack MERN Developer</h2> -->
+                                <h2 class="resume-title">Frontend Developer</h2>
+                                <div class="resume-contact">
+                                    <p><i class="fas fa-envelope"></i> <a
+                                            href="mailto:golamhosen241@gmail.com">golamhosen241@gmail.com</a>
+                                        <i class="fas fa-phone"></i>
+                                        +8801735835313
+                                        <i class="fas fa-map-marker-alt"></i> Rajshahi, Bangladesh
+                                    </p>
+                                    <p><i class="fab fa-linkedin"></i> <a
+                                            href="https://www.linkedin.com/in/g-h-raihan-52355637a/">linkedin</a>
+                                        | <i class="fab fa-github"></i> <a
+                                            href="https://github.com/GolamHosen">github</a> </p>
+                                </div>
+                            </div>
+
+                            <!-- Professional Summary -->
+                            <div class="resume-section">
+                                <h3 class="section-header">Professional Summary</h3>
+                                <p class="resume-text">
+                                    Creative and detail-oriented Frontend Developer with hands-on expertise in building
+                                    responsive, high-performance web applications
+                                    using modern JavaScript frameworks and cutting-edge technologies. Proficient in
+                                    JavaScript, TypeScript, React.js and Next.js. Currently
+                                    expanding into full-stack development with Node.js, Express.js, and MongoDB (MERN
+                                    stack) to deliver end-to-end solutions. Skilled
+                                    in translating designs into interactive interfaces, integrating REST APIs, and
+                                    optimizing performance for fast, scalable applications.
+                                </p>
+                            </div>
+
+                            <!-- Technical Skills -->
+                            <div class="resume-section">
+                                <h3 class="section-header">Technical Skills</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4>Frontend Technologies</h4>
+                                        <ul class="skill-list">
+                                            <li>React.js, Redux, Context API</li>
+                                            <li>Next.js, Gatsby</li>
+                                            <li>HTML5, CSS3, SASS/SCSS</li>
+                                            <li>JavaScript (ES6+), TypeScript</li>
+                                            <li>Bootstrap, Material-UI, Framer Motion, Chakra UI, Tailwind CSS</li>
+                                            <li>Webpack,Vite, Babel, ESLint</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4>Backend Technologies</h4>
+                                        <ul class="skill-list">
+                                            <li>Node.js, Express.js</li>
+                                            <li>RESTful APIs, GraphQL</li>
+                                            <li>MongoDB, Mongoose ODM</li>
+                                            <li>PostgreSQL, MySQL</li>
+                                            <li>JWT Authentication</li>
+                                            <li>Socket.io, WebSockets</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <!-- <div class="col-md-6">
+                                        <h4>Cloud & DevOps</h4>
+                                        <ul class="skill-list">
+                                            <li>AWS (EC2, S3, Lambda, RDS)</li>
+                                            <li>Docker, Kubernetes</li>
+                                            <li>CI/CD with GitHub Actions</li>
+                                            <li>Nginx, PM2</li>
+                                            <li>Redis, Elasticsearch</li>
+                                        </ul>
+                                    </div> -->
+                                    <div class="col-md-6">
+                                        <h4>Tools & Others</h4>
+                                        <ul class="skill-list">
+                                            <li>Git, GitHub</li>
+                                            <!-- <li>Jest, Mocha, Cypress</li> -->
+                                            <li>Figma, Adobe XD</li>
+                                            <li>Postman</li>
+                                            <!-- <li>Linux, Ubuntu</li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                            <!-- Key Projects -->
+                            <div class="resume-section">
+                                <h3 class="section-header">Key Projects</h3>
+
+                                <div class="project-item">
+                                    <h4>E-Commerce Platform</h4>
+                                    <p class="project-tech">React.js, Node.js, MongoDB</p>
+                                    <ul class="achievement-list">
+                                        <li>Built full-stack e-commerce solution with  products and  active users
+                                        </li>
+                                        <li>Implemented real-time inventory management and order processing system</li>
+                                        <li>Integrated payment gateway processing</li>
+                                        <!-- <li>Deployed on AWS with auto-scaling and load balancing</li> -->
+                                    </ul>
+                                </div>
+
+                                <div class="project-item">
+                                    <h4>Task Management System</h4>
+                                    <p class="project-tech">Next.js, Socket.io,MongoDB, Clerk</p>
+                                    <ul class="achievement-list">
+                                        <li>Developed collaborative task management app with real-time updates</li>
+                                        <li>Implemented drag-and-drop functionality and team collaboration features</li>
+                                        <li>Built notification system using WebSockets for instant updates</li>
+                                        
+                                    </ul>
+                                </div>
+
+                                
+                            </div>
+
+                            <!-- Education -->
+                            <div class="resume-section">
+                                <h3 class="section-header">Education</h3>
+                                <div class="education-item">
+                                    <h4>Bachelor of Science in Computer Science and Engineering</h4>
+                                    <p class="institution">Maharishi Markandeshwar Deemed To Be University, Haryana, India</p>
+                                    <p class="duration">2019 - 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-5">Get In Touch</h2>
+                    <p class="lead mb-5">I'm always interested in new opportunities and exciting projects</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="contact-info text-center">
+                                <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+                                <h5>Email</h5>
+                                <p>golamhosen241@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="contact-info text-center">
+                                <i class="fas fa-phone fa-3x text-primary mb-3"></i>
+                                <h5>Phone</h5>
+                                <p>+8801735835313</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="contact-info text-center">
+                                <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                                <h5>Location</h5>
+                                <p>Rajshahi, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="contact-info text-center">
+                                <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                                <h5>Available</h5>
+                                <p>24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-8 mx-auto">
+                            <form class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="email" class="form-control" placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message"
+                                        required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12 text-center">
+                            <h5 class="mb-3">Follow Me</h5>
+                            <div class="social-links">
+                                <a href="#" class="btn btn-outline-primary me-3"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="btn btn-outline-primary me-3"><i class="fab fa-github"></i></a>
+                                <a href="#" class="btn btn-outline-primary me-3"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-outline-primary"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-brand">
+                        <div class="footer-logo-container">
+                            <div class="footer-logo">
+                                <svg viewBox="0 0 100 100" class="footer-logo-svg">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"
+                                        opacity="0.3" />
+                                    <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width="2"
+                                        opacity="0.5" />
+                                    <circle cx="50" cy="50" r="25" fill="currentColor" opacity="0.8" />
+                                    <text x="50" y="58" text-anchor="middle" fill="white"
+                                        font-family="Arial, sans-serif" font-size="16" font-weight="bold">GHR</text>
+                                </svg>
+                            </div>
+                            <div class="footer-brand-text">
+                                <p class="mb-0">&copy; 2024 G.H.Raihan. All rights reserved.</p>
+                                <small>Frontend Developer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
