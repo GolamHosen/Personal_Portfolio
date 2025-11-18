@@ -1,0 +1,1 @@
+My portfolio showcases a wide range of projects in web development, including responsive websites, full-stack applications, and UI/UX designs. Each project reflects my ability to solve real-world problems, optimize performance, and deliver user-focused digital solutions.
